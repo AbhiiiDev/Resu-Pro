@@ -7,11 +7,11 @@ function Header() {
 <div className={styles.container}>
     <p className={styles.heading}>
         A <span>Resume</span> that stand out!
+    Make your own resume. <span>It's free</span>
       
     </p>
-     <p className={styles.heading}>
-        Make your own resume. <span>It's free</span>
-    </p> 
+     {/* <p className={styles.heading}>
+    </p>  */}
     <div className={styles.right}>
       <img src={resumeSVG} alt="Resume" />
     </div>

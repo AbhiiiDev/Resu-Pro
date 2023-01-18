@@ -7,7 +7,7 @@
  align-items: center;
  justify-content: space-evenly;
  gap: 30px;
- background-color: rgb(206,245,255);
+ background: linear-gradient(hsl(189deg 93% 74%),hsl(352deg 58% 84%));
  min-height: 80vh;
 }
 
