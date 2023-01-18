@@ -21,7 +21,7 @@ function Body() {
                 <div className={styles.colors}>
                     {
                         colors.map((item) => (
-                            <span className={styles.color}
+                            <span className={`${styles.color}`}
                                 key={item}
                                 style={{ backgroundColor: item }}
 
