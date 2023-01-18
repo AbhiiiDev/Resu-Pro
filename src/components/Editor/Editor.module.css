@@ -35,3 +35,56 @@
     flex-direction: column;
     gap: 20px;
 }
+
+.detail{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.detail .row{
+    display: flex;
+    gap:20px;
+}
+
+.detail .column{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.detail .row >div{
+    flex: 1;
+}
+
+.chips{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.chip{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding: 4px 8px;
+    background-color: #808080;
+    border-radius: 20px;
+}
+
+.chip p {
+    font-weight: 500;
+    line-height: 1.25rem;
+    color: #fff;
+}
+
+.chip svg{
+    color:#fff;
+    height: 18px;
+    width: 18px;
+cursor: pointer;
+}
+
+.chips .active{
+    background-color: #239ce2;
+}
