@@ -32,9 +32,9 @@
   border-radius: 50%;
   background-color: #239ce2;
 }
-/* .colors .active {
+.colors .active {
   border: 2px solid #000;
-} */
+}
 
 .toolbar button {
   padding: 8px 16px;
