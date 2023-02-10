@@ -12,7 +12,8 @@
     "feather": "^0.0.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-feather": "^2.0.10"
+    "react-feather": "^2.0.10",
+    "react-to-print": "^2.14.11"
   },
   "devDependencies": {
     "@types/react": "^18.0.26",

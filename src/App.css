@@ -1,5 +1,5 @@
-.app{
-display: flex;
-flex-direction: column;
-gap: 40px;
-}
+.App {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
