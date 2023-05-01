@@ -7,13 +7,16 @@ import { X } from 'react-feather';
 function Editor(props) {
   const sections = props.sections;
   const information = props.information;
+  
   const [ActiveSectionKey, setActiveSectionKey] = useState(
     Object.keys(sections)[0]
-  )
-
+  )  //initial active will be first one 
   const [ActiveInformation, setActiveInformation] = useState(
     information[sections[Object.keys(sections)[0]]]
   )
+
+
+//maintaining body for each component:(defines how many forms will be there)
 
   const WorkExpBody = (
     <div className={styles.details}>
@@ -129,6 +132,7 @@ function Editor(props) {
       </div>
     </div>
   );
+
   const educationBody = (
     <div className={styles.detail}>
       <div className={styles.row}>
@@ -211,14 +215,8 @@ function Editor(props) {
     <div className={styles.detail}>
       <div className={styles.column}>
         <label>List your achievements</label>
-        <InputControl
-          placeholder="Line 1"
-
-        />
-        <InputControl
-          placeholder="Line 2"
-
-        />
+        <InputControl placeholder="Line 1" />
+        <InputControl placeholder="Line 2"/>
         <InputControl
           placeholder="Line 3"
 
@@ -250,15 +248,16 @@ function Editor(props) {
       />
     </div>
   );
+  //detecting which section is active, whose form to show 
   const generateBody = () => {
     switch (sections[ActiveSectionKey]) {
       case sections.basicInfo: return basicInfoBody;
       case sections.workExp: return WorkExpBody;
       case sections.project: return projectBody;
       case sections.education: return educationBody;
-      case sections.achievements: return achievementsBody;
+      case sections.achievement: return achievementsBody;
       case sections.summary: return summaryBody;
-      case sections.others: return otherBody;
+      case sections.other: return otherBody;
       default:
         return null;
     }
@@ -274,7 +273,9 @@ function Editor(props) {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        {Object.keys(sections)?.map((key) => (
+        {/* extracting object keys from sections/objects: for mapping object,  we can not
+         directly map object */}
+        { Object.keys(sections)?.map((key) => (
           <div className={`${styles.section} ${ActiveSectionKey === key ? styles.active : ""
             }`
           }
@@ -306,7 +307,7 @@ function Editor(props) {
         </div>
         {generateBody()}
 
-
+<button>Save</button>
 
       </div>
     </div>

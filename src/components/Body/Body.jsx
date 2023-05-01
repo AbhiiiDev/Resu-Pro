@@ -19,6 +19,8 @@ function Body() {
   const resumeRef = useRef();
 
   const [activeColor, setActiveColor] = useState(colors[0]);
+
+  //saving enterd info here(gradding info from here)
   const [resumeInformation, setResumeInformation] = useState({
     [sections.basicInfo]: {
       id: sections.basicInfo,

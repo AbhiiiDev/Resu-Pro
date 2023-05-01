@@ -83,7 +83,7 @@ const Resume = forwardRef((props, ref) => {
                   <MapPin /> Remote
                 </p>
               ) : (
-                <span />
+                <span />      
               )}
               {item.points?.length > 0 ? (
                 <ul className={styles.points}>
@@ -348,7 +348,7 @@ const Resume = forwardRef((props, ref) => {
           </div>
           <div className={styles.col2}>
             {columns[1].map((item) => sectionDiv[item])}
-          </div>
+          </div>    
         </div>
       </div>
     </div>

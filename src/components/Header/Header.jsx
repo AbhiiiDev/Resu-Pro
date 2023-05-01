@@ -4,6 +4,7 @@ import resumeSVG from '../../assets/resume.svg'
 
 function Header() {
   return (
+    <div className={styles.container}>
 <div className={styles.container}>
     <p className={styles.heading}>
         A <span>Resume</span> that stand out!
@@ -11,10 +12,12 @@ function Header() {
     <p className={styles.heading}>
         Make your own resume. <span>It's free</span>
     </p>
-    <div className={styles.right}>
+    
+</div>
+<div className={styles.right}>
       <img src={resumeSVG} alt="Resume" />
     </div>
-</div>
+    </div>
   )
 }
 
