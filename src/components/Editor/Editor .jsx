@@ -15,6 +15,15 @@ function Editor(props) {
     information[sections[Object.keys(sections)[0]]]
   )
 
+//values usestate
+const [values, setValues] = useState({
+  name:ActiveInformation?.details?.name || "" ,
+  title:ActiveInformation?.details?.name || "" ,
+  linkedin:ActiveInformation?.details?.name || "" ,
+  github:ActiveInformation?.details?.name || "" ,
+  phone:ActiveInformation?.details?.name || "" ,
+  email:ActiveInformation?.details?.name || "" ,
+})
 
 //maintaining body for each component:(defines how many forms will be there)
 
@@ -24,25 +33,37 @@ function Editor(props) {
         <InputControl
           label="Title"
           placeholder="Enter title eg. Frontend developer"
-
+           defaultValue={values.title}
+           onChange={(event)=>{
+            setValues((prev)=>({...prev,title:event.target.value } ))
+           }}
 
         />
         <InputControl
           label="Company Name"
           placeholder="Enter company name eg. amazon"
-
+          defaultValue={values.companyName}
+          onChange={(event)=>{
+            setValues((prev)=>({...prev,title:event.target.value } ))
+           }}
         />
       </div>
       <div className={styles.row}>
         <InputControl
           label="Certificate Link"
           placeholder="Enter certificate link"
-
+            defaultValue={values.certificationLink}
+            onChange={(event)=>{
+              setValues((prev)=>({...prev,title:event.target.value } ))
+             }}
         />
         <InputControl
           label="Location"
           placeholder="Enter location eg. Remote"
-
+defaultValue={values.location}
+onChange={(event)=>{
+  setValues((prev)=>({...prev,title:event.target.value } ))
+ }}
         />
       </div>
       <div className={styles.row}>
@@ -50,13 +71,13 @@ function Editor(props) {
           label="Start Date"
           type="date"
           placeholder="Enter start date of work"
-
+defaultValue={values.startDate}
         />
         <InputControl
           label="End Date"
           type="date"
           placeholder="Enter end date of work"
-
+defaultValue={values.endDate}
         />
       </div>
 
@@ -64,15 +85,15 @@ function Editor(props) {
         <label>Enter work description</label>
         <InputControl
           placeholder="Line 1"
-
+defaultValue={values.points ?values.points[0]:""}
         />
         <InputControl
           placeholder="Line 2"
-
+          defaultValue={values.points ?values.points[1]:""}
         />
         <InputControl
           placeholder="Line 3"
-
+          defaultValue={values.points ?values.points[2]:""}
         />
       </div>
 
@@ -88,46 +109,46 @@ function Editor(props) {
           label="Title"
 
           placeholder="Enter title eg. Chat app"
-
+defaultValue={values.title}
         />
       </div>
       <InputControl
         label="Overview"
 
         placeholder="Enter basic overview of project"
-
+defaultValue={values.overview}
       />
       <div className={styles.row}>
         <InputControl
           label="Deployed Link"
 
           placeholder="Enter deployed link of project"
-
+defaultValue={values.link}
         />
         <InputControl
           label="Github Link"
 
           placeholder="Enter github link of project"
-
+defaultValue={values.github}
         />
       </div>
       <div className={styles.column}>
         <label>Enter project description</label>
         <InputControl
           placeholder="Line 1"
-
+          defaultValue={values.points ?values.points[0]:""}
         />
         <InputControl
           placeholder="Line 2"
-
+          defaultValue={values.points ?values.points[1]:""}
         />
         <InputControl
           placeholder="Line 3"
-
+          defaultValue={values.points ?values.points[2]:""}
         />
         <InputControl
           placeholder="Line 4"
-
+          defaultValue={values.points ?values.points[3]:""}
         />
       </div>
     </div>
@@ -141,27 +162,27 @@ function Editor(props) {
 
 
           placeholder="Enter title eg. B-tech"
-
+defaultValue={values.title}
         />
       </div>
       <InputControl
         label="College/School Name"
 
         placeholder="Enter name of your college/school"
-
+defaultValue={values.college}
       />
       <div className={styles.row}>
         <InputControl
           label="Start Date"
           type="date"
           placeholder="Enter start date of this education"
-
+defaultValue={values.startDate}
         />
         <InputControl
           label="End Date"
           type="date"
           placeholder="Enter end date of this education"
-
+defaultValue={values.endDate}
         />
       </div>
     </div>
@@ -172,13 +193,13 @@ function Editor(props) {
         <InputControl
           label="Name"
           placeholder="Enter your full name eg. Aashu"
-
+defaultValue={values.name}
         />
         <InputControl
           label="Title"
 
           placeholder="Enter your title eg. Frontend developer"
-
+defaultValue={values.title}
         />
       </div>
       <div className={styles.row}>
@@ -186,13 +207,13 @@ function Editor(props) {
           label="Linkedin Link"
 
           placeholder="Enter your linkedin profile link"
-
+defaultValue={values.linkedin}
         />
         <InputControl
           label="Github Link"
 
           placeholder="Enter your github profile link"
-
+defaultValue={values.github}
         />
       </div>
       <div className={styles.row}>
@@ -200,13 +221,13 @@ function Editor(props) {
           label="Email"
 
           placeholder="Enter your email"
-
+defaultValue={values.email}
         />
         <InputControl
           label="Enter phone"
 
           placeholder="Enter your phone number"
-
+defaultValue={values.phone}
         />
       </div>
     </div>
@@ -215,15 +236,21 @@ function Editor(props) {
     <div className={styles.detail}>
       <div className={styles.column}>
         <label>List your achievements</label>
-        <InputControl placeholder="Line 1" />
-        <InputControl placeholder="Line 2"/>
+        <InputControl
+          placeholder="Line 1"
+          defaultValue={values.points ?values.points[0]:""}
+        />
+        <InputControl
+          placeholder="Line 2"
+          defaultValue={values.points ?values.points[1]:""}
+        />
         <InputControl
           placeholder="Line 3"
-
+          defaultValue={values.points ?values.points[2]:""}
         />
         <InputControl
           placeholder="Line 4"
-
+          defaultValue={values.points ?values.points[3]:""}
         />
       </div>
     </div>
@@ -234,7 +261,7 @@ function Editor(props) {
         label="Summary"
 
         placeholder="Enter your objective/summary"
-
+defaultValue={values.summary}
       />
     </div>
   );
@@ -244,7 +271,7 @@ function Editor(props) {
         label="Other"
 
         placeholder="Enter something"
-
+defaultValue={values.other}
       />
     </div>
   );

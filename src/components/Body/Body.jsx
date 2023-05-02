@@ -17,7 +17,7 @@ function Body() {
     other: "Other",
   };
   const resumeRef = useRef();
-
+//active color states
   const [activeColor, setActiveColor] = useState(colors[0]);
 
   //saving enterd info here(gradding info from here)
@@ -59,6 +59,10 @@ function Body() {
     },
   });
 
+  //values state
+
+
+  
   return (
     <div className={styles.container}>
       <p className={styles.heading}>Resume Builder</p>
