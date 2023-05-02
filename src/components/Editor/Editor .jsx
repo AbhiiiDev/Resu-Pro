@@ -23,7 +23,15 @@ const [values, setValues] = useState({
   github:ActiveInformation?.details?.name || "" ,
   phone:ActiveInformation?.details?.name || "" ,
   email:ActiveInformation?.details?.name || "" ,
-})
+}) 
+
+//function to update points values
+const handlePointsUpdate=(values,index)=>{
+const tempValues={...values} //making copy of values
+tempValues.points[index]=values 
+setValues(tempValues);
+}
+
 
 //maintaining body for each component:(defines how many forms will be there)
 
@@ -44,7 +52,7 @@ const [values, setValues] = useState({
           placeholder="Enter company name eg. amazon"
           defaultValue={values.companyName}
           onChange={(event)=>{
-            setValues((prev)=>({...prev,title:event.target.value } ))
+            setValues((prev)=>({...prev,companyName:event.target.value } ))
            }}
         />
       </div>
@@ -54,7 +62,7 @@ const [values, setValues] = useState({
           placeholder="Enter certificate link"
             defaultValue={values.certificationLink}
             onChange={(event)=>{
-              setValues((prev)=>({...prev,title:event.target.value } ))
+              setValues((prev)=>({...prev,certificationLink:event.target.value } ))
              }}
         />
         <InputControl
@@ -62,7 +70,7 @@ const [values, setValues] = useState({
           placeholder="Enter location eg. Remote"
 defaultValue={values.location}
 onChange={(event)=>{
-  setValues((prev)=>({...prev,title:event.target.value } ))
+  setValues((prev)=>({...prev,location:event.target.value } ))
  }}
         />
       </div>
@@ -72,12 +80,18 @@ onChange={(event)=>{
           type="date"
           placeholder="Enter start date of work"
 defaultValue={values.startDate}
+onChange={(event)=>{
+  setValues((prev)=>({...prev,startDate:event.target.value } ))
+ }}
         />
         <InputControl
           label="End Date"
           type="date"
           placeholder="Enter end date of work"
 defaultValue={values.endDate}
+onChange={(event)=>{
+  setValues((prev)=>({...prev,endDate:event.target.value } ))
+ }}
         />
       </div>
 
@@ -86,14 +100,19 @@ defaultValue={values.endDate}
         <InputControl
           placeholder="Line 1"
 defaultValue={values.points ?values.points[0]:""}
-        />
+onChange={(event)=> handlePointsUpdate(event.target.value,0)
+  
+}
+/>
         <InputControl
           placeholder="Line 2"
           defaultValue={values.points ?values.points[1]:""}
-        />
+          onChange={(event)=> handlePointsUpdate(event.target.value,1)}
+          />
         <InputControl
           placeholder="Line 3"
           defaultValue={values.points ?values.points[2]:""}
+          onChange={(event)=> handlePointsUpdate(event.target.value,2)}
         />
       </div>
 
@@ -110,6 +129,9 @@ defaultValue={values.points ?values.points[0]:""}
 
           placeholder="Enter title eg. Chat app"
 defaultValue={values.title}
+onChange={(event)=>{
+  setValues((prev)=>({...prev,title:event.target.value } ))
+ }}
         />
       </div>
       <InputControl
@@ -117,6 +139,9 @@ defaultValue={values.title}
 
         placeholder="Enter basic overview of project"
 defaultValue={values.overview}
+onChange={(event)=>{
+  setValues((prev)=>({...prev,overview:event.target.value } ))
+ }}
       />
       <div className={styles.row}>
         <InputControl
@@ -124,12 +149,18 @@ defaultValue={values.overview}
 
           placeholder="Enter deployed link of project"
 defaultValue={values.link}
+onChange={(event)=>{
+  setValues((prev)=>({...prev,link:event.target.value } ))
+ }}
         />
         <InputControl
           label="Github Link"
 
           placeholder="Enter github link of project"
 defaultValue={values.github}
+onChange={(event)=>{
+  setValues((prev)=>({...prev,github:event.target.value } ))
+ }}
         />
       </div>
       <div className={styles.column}>
@@ -137,18 +168,30 @@ defaultValue={values.github}
         <InputControl
           placeholder="Line 1"
           defaultValue={values.points ?values.points[0]:""}
+          onChange={(event)=> handlePointsUpdate(event.target.value,0)
+  
+          }
         />
         <InputControl
           placeholder="Line 2"
           defaultValue={values.points ?values.points[1]:""}
+          onChange={(event)=> handlePointsUpdate(event.target.value,1)
+  
+          }
         />
         <InputControl
           placeholder="Line 3"
           defaultValue={values.points ?values.points[2]:""}
+          onChange={(event)=> handlePointsUpdate(event.target.value,2)
+  
+          }
         />
         <InputControl
           placeholder="Line 4"
           defaultValue={values.points ?values.points[3]:""}
+          onChange={(event)=> handlePointsUpdate(event.target.value,3)
+  
+          }
         />
       </div>
     </div>
@@ -163,6 +206,9 @@ defaultValue={values.github}
 
           placeholder="Enter title eg. B-tech"
 defaultValue={values.title}
+onChange={(event)=>{
+  setValues((prev)=>({...prev,title:event.target.value } ))
+ }}
         />
       </div>
       <InputControl
@@ -170,6 +216,9 @@ defaultValue={values.title}
 
         placeholder="Enter name of your college/school"
 defaultValue={values.college}
+onChange={(event)=>{
+  setValues((prev)=>({...prev,college:event.target.value } ))
+ }}
       />
       <div className={styles.row}>
         <InputControl
@@ -177,12 +226,18 @@ defaultValue={values.college}
           type="date"
           placeholder="Enter start date of this education"
 defaultValue={values.startDate}
+onChange={(event)=>{
+  setValues((prev)=>({...prev,startDate:event.target.value } ))
+ }}
         />
         <InputControl
           label="End Date"
           type="date"
           placeholder="Enter end date of this education"
 defaultValue={values.endDate}
+onChange={(event)=>{
+  setValues((prev)=>({...prev,endDate:event.target.value } ))
+ }}
         />
       </div>
     </div>
@@ -194,12 +249,18 @@ defaultValue={values.endDate}
           label="Name"
           placeholder="Enter your full name eg. Aashu"
 defaultValue={values.name}
+onChange={(event)=>{
+  setValues((prev)=>({...prev,name:event.target.value } ))
+ }}
         />
         <InputControl
           label="Title"
 
           placeholder="Enter your title eg. Frontend developer"
 defaultValue={values.title}
+onChange={(event)=>{
+  setValues((prev)=>({...prev,title:event.target.value } ))
+ }}
         />
       </div>
       <div className={styles.row}>
@@ -208,12 +269,18 @@ defaultValue={values.title}
 
           placeholder="Enter your linkedin profile link"
 defaultValue={values.linkedin}
+onChange={(event)=>{
+  setValues((prev)=>({...prev,linkedin:event.target.value } ))
+ }}
         />
         <InputControl
           label="Github Link"
 
           placeholder="Enter your github profile link"
 defaultValue={values.github}
+onChange={(event)=>{
+  setValues((prev)=>({...prev,github:event.target.value } ))
+ }}
         />
       </div>
       <div className={styles.row}>
@@ -222,12 +289,18 @@ defaultValue={values.github}
 
           placeholder="Enter your email"
 defaultValue={values.email}
+onChange={(event)=>{
+  setValues((prev)=>({...prev,email:event.target.value } ))
+ }}
         />
         <InputControl
           label="Enter phone"
 
           placeholder="Enter your phone number"
 defaultValue={values.phone}
+onChange={(event)=>{
+  setValues((prev)=>({...prev,phone:event.target.value } ))
+ }}
         />
       </div>
     </div>
@@ -239,18 +312,31 @@ defaultValue={values.phone}
         <InputControl
           placeholder="Line 1"
           defaultValue={values.points ?values.points[0]:""}
+          onChange={(event)=> handlePointsUpdate(event.target.value,0)
+  
+          }
+          
         />
         <InputControl
           placeholder="Line 2"
           defaultValue={values.points ?values.points[1]:""}
+          onChange={(event)=> handlePointsUpdate(event.target.value,1)
+  
+          }
         />
         <InputControl
           placeholder="Line 3"
           defaultValue={values.points ?values.points[2]:""}
+          onChange={(event)=> handlePointsUpdate(event.target.value,2)
+  
+          }
         />
         <InputControl
           placeholder="Line 4"
           defaultValue={values.points ?values.points[3]:""}
+          onChange={(event)=> handlePointsUpdate(event.target.value,3)
+  
+          }
         />
       </div>
     </div>
@@ -262,6 +348,10 @@ defaultValue={values.phone}
 
         placeholder="Enter your objective/summary"
 defaultValue={values.summary}
+onChange={(event)=>{
+  setValues((prev)=>({...prev,summary:event.target.value } ))
+ }}
+
       />
     </div>
   );
@@ -272,6 +362,10 @@ defaultValue={values.summary}
 
         placeholder="Enter something"
 defaultValue={values.other}
+onChange={(event)=>{
+  setValues((prev)=>({...prev,other:event.target.value } ))
+ }}
+
       />
     </div>
   );
@@ -290,7 +384,11 @@ defaultValue={values.other}
     }
 
   };
+const handleSubmission=()=>{
+  console.log(values);
+}
 
+  //useeffect to set active information at time of active section key
   useEffect(() => {
     setActiveInformation(information[sections[ActiveSectionKey]])
 
@@ -334,7 +432,7 @@ defaultValue={values.other}
         </div>
         {generateBody()}
 
-<button>Save</button>
+<button onClick={handleSubmission}>Save</button>
 
       </div>
     </div>
