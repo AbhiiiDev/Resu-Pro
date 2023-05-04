@@ -8,21 +8,21 @@ function Editor(props) {
   const sections = props.sections;
   const information = props.information;
   
-  const [ActiveSectionKey, setActiveSectionKey] = useState(
+  const [activeSectionKey, setactiveSectionKey] = useState(
     Object.keys(sections)[0]
   )  //initial active will be first one 
-  const [ActiveInformation, setActiveInformation] = useState(
+  const [activeInformation, setactiveInformation] = useState(
     information[sections[Object.keys(sections)[0]]]
   )
 
 //values usestate
 const [values, setValues] = useState({
-  name:ActiveInformation?.details?.name || "" ,
-  title:ActiveInformation?.details?.name || "" ,
-  linkedin:ActiveInformation?.details?.name || "" ,
-  github:ActiveInformation?.details?.name || "" ,
-  phone:ActiveInformation?.details?.name || "" ,
-  email:ActiveInformation?.details?.name || "" ,
+  name:activeInformation?.details?.name || "" ,
+  title:activeInformation?.details?.name || "" ,
+  linkedin:activeInformation?.details?.name || "" ,
+  github:activeInformation?.details?.name || "" ,
+  phone:activeInformation?.details?.name || "" ,
+  email:activeInformation?.details?.name || "" ,
 }) 
 
 //function to update points values
@@ -371,7 +371,7 @@ onChange={(event)=>{
   );
   //detecting which section is active, whose form to show 
   const generateBody = () => {
-    switch (sections[ActiveSectionKey]) {
+    switch (sections[activeSectionKey]) {
       case sections.basicInfo: return basicInfoBody;
       case sections.workExp: return WorkExpBody;
       case sections.project: return projectBody;
@@ -390,9 +390,24 @@ const handleSubmission=()=>{
 
   //useeffect to set active information at time of active section key
   useEffect(() => {
-    setActiveInformation(information[sections[ActiveSectionKey]])
+    const activeInfo=information[sections[activeSectionKey]]
+    setactiveInformation(activeInfo);
+    setValues({
+      name: activeInfo?.details ? activeInformation?.details?.name || "":"" ,
+      overview: activeInfo?.details ? activeInformation?.details[0]?.overview || "" :"", //details first by default:selected
+      link: activeInfo?.details ? activeInformation?.details[0]?.link || "" :"",
+      certificationLink: activeInfo?.details ? activeInformation?.details[0]?.certificationLink || "":"",
+      startDate: activeInfo?.details ? activeInformation?.details[0]?.startDate || "": "",
+      endDate: activeInfo?.details ? activeInformation?.details[0]?.endDate || "":"",
+      points:,
+  title:activeInformation?.details?.name || "" ,
+  linkedin:activeInformation?.details?.name || "" ,
+  github:activeInformation?.details?.name || "" ,
+  phone:activeInformation?.details?.name || "" ,
+  email:activeInformation?.details?.name || "" ,
+    })
 
-  }, [ActiveSectionKey])
+  }, [activeSectionKey])
 
 
   return (
@@ -401,11 +416,11 @@ const handleSubmission=()=>{
         {/* extracting object keys from sections/objects: for mapping object,  we can not
          directly map object */}
         { Object.keys(sections)?.map((key) => (
-          <div className={`${styles.section} ${ActiveSectionKey === key ? styles.active : ""
+          <div className={`${styles.section} ${activeSectionKey === key ? styles.active : ""
             }`
           }
             key={key}
-            onClick={() => setActiveSectionKey(key)}>
+            onClick={() => setactiveSectionKey(key)}>
             {sections[key]}
 
           </div>
@@ -416,11 +431,11 @@ const handleSubmission=()=>{
         {/* <InputControl label="title" placeholder="enter title section" /> */}
 
         <div className={styles.chips}>
-          {ActiveInformation?.details
-            ? ActiveInformation?.details?.map((item, index) => (
+          {activeInformation?.details
+            ? activeInformation?.details?.map((item, index) => (
 
               <div className={styles.chip} key={item.title + index}>
-                <p>{sections[ActiveSectionKey]} {index + 1} </p>
+                <p>{sections[activeSectionKey]} {index + 1} </p>
                 <X />
               </div>
 
