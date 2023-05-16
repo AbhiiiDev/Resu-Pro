@@ -4,7 +4,8 @@ function InputControl ({label , ...props})  {
   return (
     <div className={styles.container}>
       {label && <label>{label}</label>}
-      <input type="text" {...props}/>
+      <input type="text" {...props}/> 
+      {/* //...props:distributing all props(each and every component)  */}
     </div>
   )
 }
