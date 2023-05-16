@@ -14,7 +14,7 @@ function Editor(props) {
 
   const [activeSectionKey, setActiveSectionKey] = useState(
     Object.keys(sections)[0]
-  ) ; //initial active will be first one 
+  ); //initial active will be first one 
   const [activeInformation, setActiveInformation] = useState(
     information[sections[Object.keys(sections)[0]]]
   )
@@ -392,97 +392,120 @@ function Editor(props) {
     console.log(values);
     switch (sections[activeSectionKey]) {
       case sections.basicInfo:
-     {        
-const tempDetail = {
-  name:values.name,
-  title:values.title,
-  linkedin:values.linkedin,
-  github:values.github,
-  email:values.email,
-  phone:values.phone,
-  
-}
-props.setInformation(prev=>({...prev,[sections.basicInfo]:
-  {...prev[sections.basicInfo],detail:tempDetail },
-}))
-      
-          break }
+        {
+          const tempDetail = {
+            name: values.name,
+            title: values.title,
+            linkedin: values.linkedin,
+            github: values.github,
+            email: values.email,
+            phone: values.phone,
+
+          }
+          props.setInformation(prev => ({
+            ...prev, [sections.basicInfo]:
+              { ...prev[sections.basicInfo], detail: tempDetail },
+          }))
+          break
+        }
+      case sections.workExp:
+        {
+          const tempDetail = {
+            certificationLink: values.certificationLink,
+            title: values.title,
+            startDate: values.startDate,
+            endDate: values.endDate,
+            companyName: values.companyName,
+            location: values.location,
+            points: values.points,
+
+
+          }
+          props.setInformation(prev => ({
+            ...prev, [sections.workExp]:
+              { ...prev[sections.workExp], detail: tempDetail },
+          }))
+
+          break
+        }
+    }
   }
+    //useeffect to set active information at time of active section key
+    useEffect(() => {
+      const activeInfo = information[sections[activeSectionKey]]
+      setActiveInformation(activeInfo);
+      setValues({
+        name: activeInfo?.detail?.name || "",
+        overview: activeInfo?.details ? activeInfo.details[0]?.overview || "" : "", //details first by default:selected
+        link: activeInfo?.details ? activeInfo.details[0]?.link || "" : "",
+        certificationLink: activeInfo?.details ? activeInfo.details[0]?.certificationLink || "" : "",
+        companyName: activeInfo?.details ? activeInfo.details[0]?.companyName || "" : "",
+        location: activeInfo?.details ? activeInfo.details[0]?.location || "" : "",
+        startDate: activeInfo?.details ? activeInfo.details[0]?.startDate || "" : "",
+        endDate: activeInfo?.details ? activeInfo.details[0]?.endDate || "" : "",
+        points: activeInfo?.details
+          ? activeInfo.details[0]?.points
+            ? [...activeInfo.details[0]?.points] :
+            ""
+          : activeInfo.points
+            ? [...activeInfo.points]
+            : "",
+        title: activeInfo?.details
+          ? activeInfo.details[0]?.title || ""
+          : activeInfo?.detail?.title || "",
+        linkedin: activeInfo?.detail?.linkedin || "",
+        github: activeInfo?.details
+          ? activeInfo.details[0]?.github || ""
+          : activeInfo?.detail?.github || "",
+        phone: activeInfo?.detail?.phone || "",
+        email: activeInfo?.detail?.email || "",
+      })
 
-  //useeffect to set active information at time of active section key
-  useEffect(() => {
-    const activeInfo = information[sections[activeSectionKey]]
-    setActiveInformation(activeInfo);
-    setValues({
-      name: activeInfo?.detail?.name || "",
-      overview: activeInfo?.details ? activeInfo.details[0]?.overview || "" : "", //details first by default:selected
-      link: activeInfo?.details ? activeInfo.details[0]?.link || "" : "",
-      certificationLink: activeInfo?.details ? activeInfo.details[0]?.certificationLink || "" : "",
-      startDate: activeInfo?.details ? activeInfo.details[0]?.startDate || "" : "",
-      endDate: activeInfo?.details ? activeInfo.details[0]?.endDate || "" : "",
-      points: activeInfo?.details
-        ? activeInfo.details[0]?.points
-          ? [...activeInfo.details[0]?.points] :
-          ""
-        : activeInfo.points
-          ? [...activeInfo.points]
-          : "",
-      title: activeInfo?.details
-        ? activeInfo.details[0]?.title || ""
-        : activeInfo?.detail?.title || "",
-      linkedin: activeInfo?.detail?.linkedin || "",
-      github: activeInfo?.details
-        ? activeInfo.details[0]?.github || ""
-        : activeInfo?.detail?.github || "",
-      phone: activeInfo?.detail?.phone || "",
-      email: activeInfo?.detail?.email || "",
-    })
-
-  }, [activeSectionKey])
+    }, [activeSectionKey])
 
 
-  return (
-    <div className={styles.container}>
-      <div className={styles.header}>
-        {/* extracting object keys from sections/objects: for mapping object,  we can not
+    return (
+      <div className={styles.container}>
+        <div className={styles.header}>
+          {/* extracting object keys from sections/objects: for mapping object,  we can not
          directly map object */}
-        {Object.keys(sections)?.map((key) => (
-          <div className={`${styles.section} ${activeSectionKey === key ? styles.active : ""
-            }`
+          {Object.keys(sections)?.map((key) => (
+            <div className={`${styles.section} ${activeSectionKey === key ? styles.active : ""
+              }`
             }
-            key={key}
-            onClick={() => setActiveSectionKey(key)}>
+              key={key}
+              onClick={() => setActiveSectionKey(key)}>
 
-            {sections[key]}
+              {sections[key]}
 
-          </div>
-        ))}
-
-      </div>
-      <div className={styles.body}>
-        {/* <InputControl label="title" placeholder="enter title section" /> */}
-
-        <div className={styles.chips}>
-          {activeInformation?.details
-            ? activeInformation?.details?.map((item, index) => (
-
-              <div className={styles.chip} key={item.title + index}>
-                <p>{sections[activeSectionKey]} {index + 1} </p>
-                <X />
-              </div>
-
-            ))
-            : ""}
+            </div>
+          ))}
 
         </div>
-        {generateBody()}
+        <div className={styles.body}>
+          {/* <InputControl label="title" placeholder="enter title section" /> */}
 
-        <button onClick={handleSubmission}>Save</button>
+          <div className={styles.chips}>
+            {activeInformation?.details
+              ? activeInformation?.details?.map((item, index) => (
 
+                <div className={styles.chip} key={item.title + index}>
+                  <p>{sections[activeSectionKey]} {index + 1} </p>
+                  <X />
+                </div>
+
+              ))
+              : ""}
+
+          </div>
+          {generateBody()}
+
+          <button onClick={handleSubmission}>Save</button>
+
+        </div>
       </div>
-    </div>
-  )
+    )
 
-}
+  }
 
-export default Editor 
+  export default Editor;
