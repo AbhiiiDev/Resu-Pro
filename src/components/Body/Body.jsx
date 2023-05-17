@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import ReactToPrint from "react-to-print";
 import { ArrowDown } from "react-feather";
 import Editor from "../Editor/Editor ";
@@ -60,7 +60,9 @@ function Body() {
     },
   });
 
-
+useEffect(()=>{
+console.log(resumeInformation);
+},[resumeInformation])
   
   return (
     <div className={styles.container}>
