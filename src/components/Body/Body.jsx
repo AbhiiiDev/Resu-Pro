@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import ReactToPrint from "react-to-print";
 import { ArrowDown } from "react-feather";
-import Editor from "../Editor/Editor ";
+import Editor from "../Editor/Editor.jsx";
 import Resume from "../Resume/Resume";
 import styles from "./Body.module.css";
 
