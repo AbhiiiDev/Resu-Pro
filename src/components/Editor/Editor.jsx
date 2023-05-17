@@ -19,7 +19,9 @@ function Editor(props) {
   const [activeInformation, setActiveInformation] = useState(
     information[sections[Object.keys(sections)[0]]]
   );
-const [activeDetailIndex,setActiveDetailIndex]=useState(0);
+
+  //decide which workExp,project and Education is selected
+  const [activeDetailIndex, setActiveDetailIndex] = useState(0);
 
 
   //values usestate
@@ -35,7 +37,7 @@ const [activeDetailIndex,setActiveDetailIndex]=useState(0);
   //function to update points values
   const handlePointsUpdate = (values, index) => {
     const tempValues = { ...values } //making copy of values
-    if(!Array.isArray(tempValues.points)) tempValues.points=[]
+    if (!Array.isArray(tempValues.points)) tempValues.points = []
     tempValues.points[index] = values
     setValues(tempValues);
   }
@@ -397,7 +399,7 @@ const [activeDetailIndex,setActiveDetailIndex]=useState(0);
   //handling submission of details
   //responsible for data updation
   const handleSubmission = () => {
-    console.log(values);
+    // console.log(values);
     switch (sections[activeSectionKey]) {
       case sections.basicInfo:
         {
@@ -425,16 +427,16 @@ const [activeDetailIndex,setActiveDetailIndex]=useState(0);
             endDate: values.endDate,
             companyName: values.companyName,
             location: values.location,
-              points: values.points,
+            points: values.points,
 
           }
           //first details then at particular index new details updated 
-const tempDetails=[...information[sections.workExp]?.details];
-tempDetails[activeDetailIndex]=tempDetail;
+          const tempDetails = [...information[sections.workExp]?.details];
+          tempDetails[activeDetailIndex] = tempDetail;
 
           props.setInformation((prev) => ({
             ...prev, [sections.workExp]:
-              { ...prev[sections.workExp], details: tempDetails,}
+              { ...prev[sections.workExp], details: tempDetails, }
           }))
 
           break
@@ -442,19 +444,19 @@ tempDetails[activeDetailIndex]=tempDetail;
       case sections.project:
         {
           const tempDetail = {
-           
-            link:values.link,
-            title:values.title,
-            overview:values.overview,
+
+            link: values.link,
+            title: values.title,
+            overview: values.overview,
             github: values.github,
-                points: values.points,
-  
-          
+            points: values.points,
+
+
 
           }
           //first details then at particular index new details updated 
-const tempDetails=[...information[sections.project]?.details];
-tempDetails[activeDetailIndex]=tempDetail;
+          const tempDetails = [...information[sections.project]?.details];
+          tempDetails[activeDetailIndex] = tempDetail;
 
           props.setInformation((prev) => ({
             ...prev, [sections.project]:
@@ -466,15 +468,15 @@ tempDetails[activeDetailIndex]=tempDetail;
       case sections.education:
         {
           const tempDetail = {
-          title:values.title,
-          college:values.college,
-          startDate:values.startDate,
-          endDate:values.endDate,    
+            title: values.title,
+            college: values.college,
+            startDate: values.startDate,
+            endDate: values.endDate,
 
           }
           //first details then at particular index new details updated 
-const tempDetails=[...information[sections.education]?.details];
-tempDetails[activeDetailIndex]=tempDetail;
+          const tempDetails = [...information[sections.education]?.details];
+          tempDetails[activeDetailIndex] = tempDetail;
 
           props.setInformation((prev) => ({
             ...prev, [sections.education]:
@@ -488,139 +490,192 @@ tempDetails[activeDetailIndex]=tempDetail;
           const tempPoints = values.points;
 
 
-          props.setInformation((prev)=> ({
+          props.setInformation((prev) => ({
             ...prev, [sections.achievement]:
               { ...prev[sections.achievement], points: tempPoints },
           }))
 
           break
         }
-        case sections.summary:
-          {
-            const tempDetail = values.summary;
-      
-            props.setInformation((prev) => ({
-              ...prev, [sections.summary]:
-                { ...prev[sections.summary], detail: tempDetail },
-            }))
-  
-            break
-          }
-        case sections.other:
-          {
-            const tempDetail = values.other;
-      
-            props.setInformation((prev) => ({
-              ...prev, [sections.other]:
-                { ...prev[sections.other], detail: tempDetail },
-            }))
-  
-            break
-          }
+      case sections.summary:
+        {
+          const tempDetail = values.summary;
+
+          props.setInformation((prev) => ({
+            ...prev, [sections.summary]:
+              { ...prev[sections.summary], detail: tempDetail },
+          }))
+
+          break
+        }
+      case sections.other:
+        {
+          const tempDetail = values.other;
+
+          props.setInformation((prev) => ({
+            ...prev, [sections.other]:
+              { ...prev[sections.other], detail: tempDetail },
+          }))
+
+          break
+        }
     }
   }
 
+  const handleAddNew = () => {
+    const details = activeInformation?.details;
+    if (!details) return;
+
+    //following two lines will ensure if prev workExp is empty new won't work
+    const lastDetail = details.slice(-1)[0];
+    if (!Object.keys(lastDetail).length) return;
 
 
-    //useeffect to set active information at time of active section key
-    useEffect(() => {
-      const activeInfo = information[sections[activeSectionKey]]
-      setActiveInformation(activeInfo);
-      setActiveDetailIndex(0);
-      setValues({
-        name: activeInfo?.detail?.name || "",
-        overview: activeInfo?.details ? activeInfo.details[0]?.overview || "" : "", //details first by default:selected
-        link: activeInfo?.details ? activeInfo.details[0]?.link || "" : "",
-        certificationLink: activeInfo?.details ? activeInfo.details[0]?.certificationLink || "" : "",
-        companyName: activeInfo?.details ? activeInfo.details[0]?.companyName || "" : "",
-        location: activeInfo?.details ? activeInfo.details[0]?.location || "" : "",
-        startDate: activeInfo?.details ? activeInfo.details[0]?.startDate || "" : "",
-        endDate: activeInfo?.details ? activeInfo.details[0]?.endDate || "" : "",
-        points: activeInfo?.details
-          ? activeInfo.details[0]?.points
-            ? [...activeInfo.details[0]?.points] :
-            ""
-          : activeInfo.points
-            ? [...activeInfo.points]
-            : "",
-        title: activeInfo?.details
-          ? activeInfo.details[0]?.title || ""
-          : activeInfo?.detail?.title || "",
-        linkedin: activeInfo?.detail?.linkedin || "",
-        github: activeInfo?.details
-          ? activeInfo.details[0]?.github || ""
-          : activeInfo?.detail?.github || "",
-        phone: activeInfo?.detail?.phone || "",
-        email: activeInfo?.detail?.email || "",
-        summary:typeof activeInfo?.detail!==Object?activeInfo.detail :"",
-        other:typeof activeInfo?.detail!==Object?activeInfo.detail :"" ,
-        
+    details?.push({});
 
-      })
+    props.setInformation((prev) => ({
+      ...prev,
+      [sections[activeSectionKey]]: {
+        ...information[sections[activeSectionKey]],
+        details: details,
+      },
+    }));
+    setActiveDetailIndex(details?.length)
+  }
+  const handleDeleteDetail =(index) => {
+    const details = activeInformation?.details
+      ? [...activeInformation?.details]
+      : "";
 
-    }, [activeSectionKey])
+    if (!details) return;
+    details.splice(index, 1);
+    props.setInformation((prev) => ({
+      ...prev,
+      [sections[activeSectionKey]]: {
+        ...information[sections[activeSectionKey]],
+        details: details,
+      },
+    }));
+    setActiveDetailIndex((prev) => (prev === index ? 0 : prev - 1));
+  }
+  //useeffect to set active information at time of active section key
+  useEffect(() => {
+    const activeInfo = information[sections[activeSectionKey]]
+    setActiveInformation(activeInfo);
+    setActiveDetailIndex(0);
+    setValues({
+      name: activeInfo?.detail?.name || "",
+      overview: activeInfo?.details ? activeInfo.details[0]?.overview || "" : "", //details first by default:selected
+      link: activeInfo?.details ? activeInfo.details[0]?.link || "" : "",
+      certificationLink: activeInfo?.details ? activeInfo.details[0]?.certificationLink || "" : "",
+      companyName: activeInfo?.details ? activeInfo.details[0]?.companyName || "" : "",
+      location: activeInfo?.details ? activeInfo.details[0]?.location || "" : "",
+      startDate: activeInfo?.details ? activeInfo.details[0]?.startDate || "" : "",
+      endDate: activeInfo?.details ? activeInfo.details[0]?.endDate || "" : "",
+      points: activeInfo?.details
+        ? activeInfo.details[0]?.points
+          ? [...activeInfo.details[0]?.points] :
+          ""
+        : activeInfo.points
+          ? [...activeInfo.points]
+          : "",
+      title: activeInfo?.details
+        ? activeInfo.details[0]?.title || ""
+        : activeInfo?.detail?.title || "",
+      linkedin: activeInfo?.detail?.linkedin || "",
+      github: activeInfo?.details
+        ? activeInfo.details[0]?.github || ""
+        : activeInfo?.detail?.github || "",
+      phone: activeInfo?.detail?.phone || "",
+      email: activeInfo?.detail?.email || "",
+      summary: typeof activeInfo?.detail !== Object ? activeInfo.detail : "",
+      other: typeof activeInfo?.detail !== Object ? activeInfo.detail : "",
 
-    //useeffect for chips 
-    //after maininfo activeinfo also update
-useEffect(()=> {
-setActiveInformation( information[sections[activeSectionKey]])
-},[information])
 
+    })
 
-    return (
-      <div className={styles.container}>
-        <div className={styles.header}>
-          {/* extracting object keys from sections/objects: for mapping object,  we can not
+  }, [activeSectionKey])
+
+  //useeffect for chips 
+  //after maininfo activeinfo also update
+  useEffect(() => {
+    setActiveInformation(information[sections[activeSectionKey]])
+  }, [information])
+
+  useEffect(()=>{
+const details=activeInformation?.details;
+if(!details)return;
+const activeInfo=information[sections[activeSectionKey]];
+setValues({
+  overview:activeInfo.details[activeDetailIndex]?.overview || "",
+  link:activeInfo.details[activeDetailIndex]?.link || "",
+  certificationLink:activeInfo.details[activeDetailIndex]?.
+  certificationLink || "",
+  companyName:activeInfo.details[activeDetailIndex]?.companyName || "",
+  location:activeInfo.details[activeDetailIndex]?.location || "",
+  startDate:activeInfo.details[activeDetailIndex]?.startDate || "",
+  endDate:activeInfo.details[activeDetailIndex]?.endDate || "",
+  points:activeInfo.details[activeDetailIndex]?.points || "",
+  title:activeInfo.details[activeDetailIndex]?.title || "",
+  linkedin:activeInfo.details[activeDetailIndex]?.linkedin || "",
+  github:activeInfo.details[activeDetailIndex]?.github || "",
+  college:activeInfo.details[activeDetailIndex]?.college || "",
+})
+  },[activeDetailIndex])
+ 
+  return (
+    <div className={styles.container}>
+      <div className={styles.header}>
+        {/* extracting object keys from sections/objects: for mapping object,  we can not
          directly map object */}
-          {Object.keys(sections)?.map((key) => (
-            <div className={`${styles.section} ${activeSectionKey === key ? styles.active : ""
-              }`
-            }
-              key={key}
-              onClick={() => setActiveSectionKey(key)}>
+        {Object.keys(sections)?.map((key) => (
+          <div className={`${styles.section} ${activeSectionKey === key ? styles.active : ""
+            }`
+          }
+            key={key}
+            onClick={() => setActiveSectionKey(key)}>
 
-              {sections[key]}
-
-            </div>
-          ))}
-
-        </div>
-        <div className={styles.body}>
-          {/* <InputControl label="title" placeholder="enter title section" /> */}
-
-          <div className={styles.chips}>
-            {activeInformation?.details
-              ? activeInformation?.details?.map((item, index) => (
-
-                <div className={`${styles.chip} ${
-                  activeDetailIndex===index?styles.active:""
-                }`}key={item.title + index}
-                onClick={()=>setActiveDetailIndex(index)}
-
-                >
-                  <p>{sections[activeSectionKey]} {index + 1} </p>
-                  <X />
-                </div>
-
-              ))
-              : ""
-              }
-              { activeInformation?.details && activeInformation?.details?.length>0?
-              (
-                <div className={styles.new}>+New</div>
-              ):(
-                ""
-              )}
+            {sections[key]}
 
           </div>
-          {generateBody()}
+        ))}
 
-          <button onClick={handleSubmission}>Save</button>
+      </div>
+      <div className={styles.body}>
+        {/* <InputControl label="title" placeholder="enter title section" /> */}
+
+        <div className={styles.chips}>
+          {activeInformation?.details
+            ? activeInformation?.details?.map((item, index) => (
+
+              <div className={`${styles.chip} ${activeDetailIndex === index ? styles.active : ""
+                }`} key={item.title + index}
+                onClick={() => setActiveDetailIndex(index)}
+
+              >
+                <p>{sections[activeSectionKey]} {index + 1} </p>
+                <X onClick={()=>handleDeleteDetail(index)} />
+              </div>
+
+            ))
+            : ""
+          }
+          {activeInformation?.details && activeInformation?.details?.length > 0 ?
+            (
+              <div className={styles.new} onClick={handleAddNew} >+New</div>
+            ) : (
+              ""
+            )}
 
         </div>
+        {generateBody()}
+
+        <button onClick={handleSubmission}>Save</button>
+
       </div>
-    )
+    </div>
+  )
 
-  }
+}
 
-  export default Editor;
+export default Editor;
