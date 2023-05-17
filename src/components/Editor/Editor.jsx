@@ -519,6 +519,9 @@ tempDetails[activeDetailIndex]=tempDetail;
           }
     }
   }
+
+
+
     //useeffect to set active information at time of active section key
     useEffect(() => {
       const activeInfo = information[sections[activeSectionKey]]
@@ -557,6 +560,12 @@ tempDetails[activeDetailIndex]=tempDetail;
 
     }, [activeSectionKey])
 
+    //useeffect for chips 
+    //after maininfo activeinfo also update
+useEffect(()=> {
+setActiveInformation( information[sections[activeSectionKey]])
+},[information])
+
 
     return (
       <div className={styles.container}>
@@ -594,7 +603,14 @@ tempDetails[activeDetailIndex]=tempDetail;
                 </div>
 
               ))
-              : ""}
+              : ""
+              }
+              { activeInformation?.details && activeInformation?.details?.length>0?
+              (
+                <div className={styles.new}>+New</div>
+              ):(
+                ""
+              )}
 
           </div>
           {generateBody()}
