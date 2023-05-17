@@ -410,7 +410,7 @@ const [activeDetailIndex,setActiveDetailIndex]=useState(0);
             phone: values.phone,
 
           }
-          props.setInformation(prev => ({
+          props.setInformation((prev) => ({
             ...prev, [sections.basicInfo]:
               { ...prev[sections.basicInfo], detail: tempDetail },
           }))
@@ -427,15 +427,14 @@ const [activeDetailIndex,setActiveDetailIndex]=useState(0);
             location: values.location,
               points: values.points,
 
-
           }
           //first details then at particular index new details updated 
 const tempDetails=[...information[sections.workExp]?.details];
 tempDetails[activeDetailIndex]=tempDetail;
 
-          props.setInformation(prev => ({
+          props.setInformation((prev) => ({
             ...prev, [sections.workExp]:
-              { ...prev[sections.workExp], detail: tempDetails },
+              { ...prev[sections.workExp], details: tempDetails,}
           }))
 
           break
@@ -450,7 +449,6 @@ tempDetails[activeDetailIndex]=tempDetail;
             github: values.github,
                 points: values.points,
   
-           
           
 
           }
@@ -458,7 +456,7 @@ tempDetails[activeDetailIndex]=tempDetail;
 const tempDetails=[...information[sections.project]?.details];
 tempDetails[activeDetailIndex]=tempDetail;
 
-          props.setInformation(prev => ({
+          props.setInformation((prev) => ({
             ...prev, [sections.project]:
               { ...prev[sections.project], detail: tempDetails },
           }))
@@ -478,7 +476,7 @@ tempDetails[activeDetailIndex]=tempDetail;
 const tempDetails=[...information[sections.education]?.details];
 tempDetails[activeDetailIndex]=tempDetail;
 
-          props.setInformation(prev => ({
+          props.setInformation((prev) => ({
             ...prev, [sections.education]:
               { ...prev[sections.education], detail: tempDetails },
           }))
@@ -490,7 +488,7 @@ tempDetails[activeDetailIndex]=tempDetail;
           const tempPoints = values.points;
 
 
-          props.setInformation(prev => ({
+          props.setInformation((prev)=> ({
             ...prev, [sections.achievement]:
               { ...prev[sections.achievement], points: tempPoints },
           }))
@@ -501,7 +499,7 @@ tempDetails[activeDetailIndex]=tempDetail;
           {
             const tempDetail = values.summary;
       
-            props.setInformation(prev => ({
+            props.setInformation((prev) => ({
               ...prev, [sections.summary]:
                 { ...prev[sections.summary], detail: tempDetail },
             }))
@@ -512,7 +510,7 @@ tempDetails[activeDetailIndex]=tempDetail;
           {
             const tempDetail = values.other;
       
-            props.setInformation(prev => ({
+            props.setInformation((prev) => ({
               ...prev, [sections.other]:
                 { ...prev[sections.other], detail: tempDetail },
             }))
