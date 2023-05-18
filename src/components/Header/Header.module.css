@@ -14,7 +14,7 @@
 .container
 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
  padding: 50px 30px;
  width: 100%;
