@@ -8,10 +8,11 @@ function Header() {
 <div className={styles.container}>
     <p className={styles.heading}>
         A <span>Resume</span> that stand out!
-    </p>
-    <p className={styles.heading}>
         Make your own resume. <span>It's free</span>
     </p>
+    {/* <p className={styles.heading}>
+        Make your own resume. <span>It's free</span>
+    </p> */}
     
 </div>
 <div className={styles.right}>
