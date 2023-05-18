@@ -27,11 +27,11 @@ function Editor(props) {
   //values usestate
   const [values, setValues] = useState({
     name: activeInformation?.details?.name || "",
-    title: activeInformation?.details?.name || "",
-    linkedin: activeInformation?.details?.name || "",
-    github: activeInformation?.details?.name || "",
-    phone: activeInformation?.details?.name || "",
-    email: activeInformation?.details?.name || "",
+    title: activeInformation?.details?.title || "",
+    linkedin: activeInformation?.details?.linkedin || "",
+    github: activeInformation?.details?.github || "",
+    phone: activeInformation?.details?.phone || "",
+    email: activeInformation?.details?.email || "",
   })
 
   //function to update points values
@@ -135,11 +135,10 @@ function Editor(props) {
     <div className={styles.detail}>
       <div className={styles.row}>
         <InputControl
-          label="Title"
-
+          label="Title" 
           placeholder="Enter title eg. Chat app"
           value={values.title}
-          onChange={(event) => {
+          onChange={(event) => { 
             setValues((prev) => ({ ...prev, title: event.target.value }))
           }}
         />
@@ -192,14 +191,14 @@ function Editor(props) {
         <InputControl
           placeholder="Line 3"
           value={values.points ? values.points[2] : ""}
-          onChange={(event) => handlePointsUpdate(event.target.value, 2)
+          onChange={(event) => handlePointsUpdate(event.target.value,2)
 
           }
         />
         <InputControl
           placeholder="Line 4"
           value={values.points ? values.points[3] : ""}
-          onChange={(event) => handlePointsUpdate(event.target.value, 3)
+          onChange={(event) => handlePointsUpdate(event.target.value,3)
 
           }
         />
@@ -227,7 +226,7 @@ function Editor(props) {
         placeholder="Enter name of your college/school"
         value={values.college}
         onChange={(event) => {
-          setValues((prev) => ({ ...prev, college: event.target.value }))
+          setValues((prev) => ({ ...prev,college: event.target.value }))
         }}
       />
       <div className={styles.row}>
@@ -397,7 +396,7 @@ function Editor(props) {
 
 
   //handling submission of details
-  //responsible for data updation
+  //responsible for data updation(on clicking save)
   const handleSubmission = () => {
     // console.log(values);
     switch (sections[activeSectionKey]) {
@@ -451,16 +450,13 @@ function Editor(props) {
             github: values.github,
             points: values.points,
 
-
-
           }
-          //first details then at particular index new details updated 
           const tempDetails = [...information[sections.project]?.details];
           tempDetails[activeDetailIndex] = tempDetail;
 
           props.setInformation((prev) => ({
             ...prev, [sections.project]:
-              { ...prev[sections.project], detail: tempDetails },
+              { ...prev[sections.project], details: tempDetails, }
           }))
 
           break
@@ -480,7 +476,7 @@ function Editor(props) {
 
           props.setInformation((prev) => ({
             ...prev, [sections.education]:
-              { ...prev[sections.education], detail: tempDetails },
+              { ...prev[sections.education], details: tempDetails },
           }))
 
           break
