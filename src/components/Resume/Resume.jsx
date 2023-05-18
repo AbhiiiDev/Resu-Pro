@@ -180,7 +180,7 @@ const Resume = forwardRef((props, ref) => {
                 <span />
               )}
               {item.college ? (
-                <p className={styles.subTitle}>Some college name</p>
+                <p className={styles.subTitle}>{item.college}</p>
               ) : (
                 <span />
               )}
@@ -287,7 +287,10 @@ const Resume = forwardRef((props, ref) => {
   };
 
 
-  //dividing college into 2 parts
+
+  
+  //dividing column into 2 parts
+
   useEffect(() => {
     setColumns([
       [sections.project, sections.education, sections.summary],
