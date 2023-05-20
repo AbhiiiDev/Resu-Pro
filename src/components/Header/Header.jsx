@@ -16,7 +16,7 @@ function Header() {
     <p style={{fontSize:'30px'}} >
       <h1 style={{margin:'30px',border:'2px'}}>
       We are here {' '}
-      <span style={{fontWeight:'bold',color:'green'}}>
+      <span style={{fontWeight:'bold',color:'brown'}}>
         {text}
       </span>
       <span style={{color:'black'}}>
