@@ -12,30 +12,37 @@ function Header() {
   });
   return (
     <div className={styles.container} >
-<div className={styles.container}>
+<div >
     <p style={{fontSize:'30px'}} >
       <h1 style={{margin:'30px',border:'2px'}}>
       We are here {' '}
-      <span style={{fontWeight:'bold',color:'blue'}}>
+      <span style={{fontWeight:'bold',color:'green'}}>
         {text}
       </span>
-      <span style={{color:'red'}}>
-        <Cursor cursorStyle='<'/>
+      <span style={{color:'black'}}>
+        <Cursor cursorStyle='>'/>
       </span>
     
     </h1>
         {/* A <span>Resume</span> that stand out! */}
     </p>
-    <p className={styles.heading} style={{flexDirection:'row-reverse'}} >
+    {/* <p className={styles.heading} style={{flexDirection:'row-reverse'}} >
     Get noticed by recruiters <span> Resupro</span>
-    </p>
+    </p> */}
     
 </div>
 {/* <div className={styles.right}>
       <img src={resumeSVG} alt="Resume" />
     </div> */}
-    <div className={styles.video} style={{flexDirection:'row-reverse'}}>
-        <video className={styles.video} src={videoFile} controls autoPlay loop muted />
+    <div className={styles.video_container}>
+
+    <div className={styles.heading}  >
+    Get noticed by recruiters <span> Resupro</span>
+    </div>
+    <div>
+    <video className={styles.video} src={videoFile} controls autoPlay loop muted />
+    </div>
+        
       </div>
     </div>
   )
