@@ -1,0 +1,12 @@
+.images {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 40px;
+    justify-content: space-between;
+}
+.image{
+    height:200px;
+    width: 200px;
+    cursor: pointer;
+}
