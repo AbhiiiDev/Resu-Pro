@@ -1,0 +1,507 @@
+Experience,Education and Skills,Score (out of 100)
+2,"Bachelor's in Computer Science, Java, Web Development",45
+3,"Master's in Data Science, Python, Statistical Modeling",60
+1,"Bachelor's in Information Technology, SQL, Data Analysis",35
+4,"Master's in Computer Science, Python, Machine Learning",75
+0,"Bachelor's in Mathematics, R, Data Visualization",25
+2,"Bachelor's in Data Science, Python, Deep Learning",50
+3,"Master's in Statistics, R, Statistical Modeling",65
+1,"Bachelor's in Computer Engineering, Java, Data Structures",40
+4,"Master's in Machine Learning, Python, Neural Networks",80
+0,"Bachelor's in Economics, Econometrics, R",30
+2,"Bachelor's in Statistics, Python, Data Analysis",55
+3,"Master's in Data Analytics, SQL, Data Visualization",70
+1,"Bachelor's in Computer Science, Java, Web Development",45
+4,"Master's in Data Science, Python, Statistical Modeling",75
+0,"Bachelor's in Information Technology, SQL, Data Analysis",25
+2,"Bachelor's in Mathematics, R, Data Visualization",50
+3,"Master's in Data Science, Python, Deep Learning",65
+1,"Bachelor's in Computer Engineering, Java, Data Structures",40
+4,"Master's in Machine Learning, Python, Neural Networks",80
+0,"Bachelor's in Economics, Econometrics, R",30
+2,"Bachelor's in Statistics, Python, Data Analysis",55
+3,"Master's in Data Analytics, SQL, Data Visualization",70
+1,"Bachelor's in Computer Science, Java, Web Development",45
+4,"Master's in Data Science, Python, Statistical Modeling",75
+0,"Bachelor's in Information Technology, SQL, Data Analysis",25
+2,"Bachelor's in Mathematics, R, Data Visualization",50
+3,"Master's in Data Science, Python, Deep Learning",65
+1,"Bachelor's in Computer Engineering, Java, Data Structures",40
+4,"Master's in Machine Learning, Python, Neural Networks",80
+0,"Bachelor's in Economics, Econometrics, R",30
+2,"Bachelor's in Statistics, Python, Data Analysis",55
+3,"Master's in Data Analytics, SQL, Data Visualization",70
+1,"Bachelor's in Computer Science, Java, Web Development",45
+4,"Master's in Data Science, Python, Statistical Modeling",75
+1,"Bachelor's in Computer Science, Python, Web Development",35
+3,"Master's in Data Science, R, Machine Learning",85
+0,"Bachelor's in Information Technology, SQL, Data Analysis",25
+4,"Master's in Computer Science, Python, Statistical Modeling",95
+2,"Bachelor's in Mathematics, Data Visualization, Python",55
+1,"Bachelor's in Data Science, SQL, Data Analysis",40
+3,"Master's in Statistics, Python, Statistical Modeling",80
+0,"Bachelor's in Computer Engineering, Java, Data Structures",30
+4,"Master's in Machine Learning, Python, Neural Networks",90
+2,"Bachelor's in Economics, Econometrics, R",50
+1,"Bachelor's in Information Technology, Python, SQL",35
+3,"Master's in Data Analytics, R, Data Visualization",85
+0,"Bachelor's in Computer Science, Java, Web Development",25
+4,"Master's in Data Science, Python, Machine Learning",95
+2,"Bachelor's in Mathematics, Python, Data Analysis",55
+1,"Bachelor's in Data Science, R, Statistical Modeling",40
+3,"Master's in Data Analytics, SQL, Data Visualization",80
+0,"Bachelor's in Computer Engineering, Python, Algorithms",30
+4,"Master's in Machine Learning, Python, Deep Learning",90
+2,"Bachelor's in Economics, Econometrics, R",50
+1,"Bachelor's in Information Technology, SQL, Python",35
+3,"Master's in Data Science, Python, Statistical Modeling",85
+0,"Bachelor's in Computer Science, Java, Data Structures",25
+4,"Master's in Data Science, Python, Machine Learning",95
+2,"Bachelor's in Mathematics, Python, Data Analysis",55
+1,"Bachelor's in Data Science, R, Statistical Modeling",40
+3,"Master's in Data Analytics, SQL, Data Visualization",80
+0,"Bachelor's in Computer Engineering, Python, Algorithms",30
+4,"Master's in Machine Learning, Python, Deep Learning",90
+2,"Bachelor's in Economics, Econometrics, R",50
+1,"Bachelor's in Information Technology, SQL, Python",35
+3,"Master's in Data Science, Python, Statistical Modeling",85
+0,"Bachelor's in Computer Science, Java, Data Structures",25
+4,"Master's in Data Science, Python, Machine Learning",95
+2,"Bachelor's in Computer Science, Java, Web Development",45
+3,"Master's in Data Science, Python, Statistical Modeling",60
+1,"Bachelor's in Information Technology, SQL, Data Analysis",35
+4,"Master's in Computer Science, Python, Machine Learning",75
+0,"Bachelor's in Mathematics, R, Data Visualization",25
+2,"Bachelor's in Data Science, Python, Deep Learning",50
+3,"Master's in Statistics, R, Statistical Modeling",65
+1,"Bachelor's in Computer Engineering, Java, Data Structures",40
+4,"Master's in Machine Learning, Python, Neural Networks",80
+0,"Bachelor's in Economics, Econometrics, R",30
+2,"Bachelor's in Statistics, Python, Data Analysis",55
+3,"Master's in Data Analytics, SQL, Data Visualization",70
+1,"Bachelor's in Computer Science, Java, Web Development",45
+4,"Master's in Data Science, Python, Statistical Modeling",75
+0,"Bachelor's in Information Technology, SQL, Data Analysis",25
+2,"Bachelor's in Mathematics, R, Data Visualization",50
+3,"Master's in Data Science, Python, Deep Learning",65
+1,"Bachelor's in Computer Engineering, Java, Data Structures",40
+4,"Master's in Machine Learning, Python, Neural Networks",80
+0,"Bachelor's in Economics, Econometrics, R",30
+2,"Bachelor's in Statistics, Python, Data Analysis",55
+3,"Master's in Data Analytics, SQL, Data Visualization",70
+1,"Bachelor's in Computer Science, Java, Web Development",45
+4,"Master's in Data Science, Python, Statistical Modeling",75
+0,"Bachelor's in Information Technology, SQL, Data Analysis",25
+2,"Bachelor's in Mathematics, R, Data Visualization",50
+3,"Master's in Data Science, Python, Deep Learning",65
+1,"Bachelor's in Computer Engineering, Java, Data Structures",40
+4,"Master's in Machine Learning, Python, Neural Networks",80
+0,"Bachelor's in Economics, Econometrics, R",30
+2,"Bachelor's in Statistics, Python, Data Analysis",55
+3,"Master's in Data Analytics, SQL, Data Visualization",70
+1,"Bachelor's in Computer Science, Java, Web Development",45
+4,"Master's in Data Science, Python, Statistical Modeling",75
+1,"Bachelor's in Computer Science, Java, Web Development",40
+2,"Bachelor's in Data Science, Python, Statistical Modeling",45
+0,"Bachelor's in Information Technology, SQL, Data Analysis",30
+3,"Master's in Computer Science, Python, Machine Learning",48
+2,"Bachelor's in Mathematics, R, Data Visualization",38
+4,"Master's in Data Science, Python, Deep Learning",50
+1,"Bachelor's in Statistics, R, Statistical Modeling",35
+3,"Master's in Data Analytics, SQL, Data Visualization",49
+0,"Bachelor's in Computer Engineering, Java, Data Structures",30
+2,"Bachelor's in Information Technology, Python, SQL",37
+4,"Master's in Machine Learning, Python, Neural Networks",52
+1,"Bachelor's in Economics, Econometrics, R",34
+3,"Master's in Statistics, Python, Data Analysis",47
+0,"Bachelor's in Mathematics, Statistical Modeling, Python",30
+2,"Bachelor's in Data Science, Python, Machine Learning",39
+4,"Master's in Computer Science, Data Mining, Deep Learning",54
+1,"Bachelor's in Computer Science, Python, Data Analysis",33
+3,"Master's in Data Science, Python, Statistical Modeling",48
+0,"Bachelor's in Statistics, R, Statistical Modeling",30
+2,"Bachelor's in Information Technology, SQL, Python",37
+4,"Master's in Data Analytics, Python, Data Visualization",52
+1,"Bachelor's in Machine Learning, Python, Neural Networks",34
+3,"Master's in Computer Science, Python, Artificial Intelligence",49
+0,"Bachelor's in Computer Engineering, Python, Algorithms",30
+2,"Bachelor's in Mathematics, Machine Learning, Python",38
+4,"Master's in Data Science, Python, Predictive Modeling",53
+1,"Bachelor's in Economics, Econometrics, Python",35
+3,"Master's in Data Analytics, R, Data Visualization",50
+0,"Bachelor's in Computer Science, Java, Data Structures",30
+2,"Bachelor's in Data Science, R, Statistical Modeling",39
+4,"Master's in Machine Learning, Python, Deep Learning",54
+1,"Bachelor's in Computer Science, Python, Web Development",34
+3,"Master's in Data Science, Python, Machine Learning",49
+0,"Bachelor's in Statistics, R, Statistical Modeling",30
+1,"Bachelor's in Computer Science, Java, Web Development",40
+2,"Bachelor's in Data Science, Python, Statistical Modeling",45
+0,"Bachelor's in Information Technology, SQL, Data Analysis",30
+3,"Master's in Computer Science, Python, Machine Learning",48
+2,"Bachelor's in Mathematics, R, Data Visualization",38
+4,"Master's in Data Science, Python, Deep Learning",50
+1,"Bachelor's in Statistics, R, Statistical Modeling",35
+3,"Master's in Data Analytics, SQL, Data Visualization",49
+0,"Bachelor's in Computer Engineering, Java, Data Structures",30
+2,"Bachelor's in Information Technology, Python, SQL",37
+4,"Master's in Machine Learning, Python, Neural Networks",52
+1,"Bachelor's in Economics, Econometrics, R",34
+3,"Master's in Statistics, Python, Data Analysis",47
+0,"Bachelor's in Mathematics, Statistical Modeling, Python",30
+2,"Bachelor's in Data Science, Python, Machine Learning",39
+4,"Master's in Computer Science, Data Mining, Deep Learning",54
+1,"Bachelor's in Computer Science, Python, Data Analysis",33
+3,"Master's in Data Science, Python, Statistical Modeling",48
+0,"Bachelor's in Statistics, R, Statistical Modeling",30
+2,"Bachelor's in Information Technology, SQL, Python",37
+4,"Master's in Data Analytics, Python, Data Visualization",52
+1,"Bachelor's in Machine Learning, Python, Neural Networks",34
+3,"Master's in Computer Science, Python, Artificial Intelligence",49
+0,"Bachelor's in Computer Engineering, Python, Algorithms",30
+2,"Bachelor's in Mathematics, Machine Learning, Python",38
+4,"Master's in Data Science, Python, Predictive Modeling",53
+1,"Bachelor's in Economics, Econometrics, Python",35
+3,"Master's in Data Analytics, R, Data Visualization",50
+0,"Bachelor's in Computer Science, Java, Data Structures",30
+2,"Bachelor's in Data Science, R, Statistical Modeling",39
+4,"Master's in Machine Learning, Python, Deep Learning",54
+1,"Bachelor's in Computer Science, Python, Web Development",34
+3,"Master's in Data Science, Python, Machine Learning",49
+0,"Bachelor's in Statistics, R, Statistical Modeling",30
+2,"Bachelor's in Data Science, Python, SQL, Tableau",45
+1,"Bachelor's in Computer Science, Python, SQL",40
+3,"Master's in Statistics, R, Data Analysis",55
+0,"Bachelor's in Information Technology, Java, SQL",35
+2,"Bachelor's in Mathematics, Statistical Modeling, Python",50
+4,"Master's in Data Analytics, Python, Data Visualization",60
+2,"Bachelor's in Computer Engineering, C++, Data Structures",45
+3,"Master's in Data Science, Python, Natural Language Processing",55
+1,"Bachelor's in Statistics, R, Machine Learning",40
+2,"Bachelor's in Computer Science, Java, Database Management",45
+4,"Master's in Data Analytics, Python, Statistical Modeling",60
+0,"Bachelor's in Economics, Econometrics, Python",35
+2,"Bachelor's in Information Technology, SQL, Web Development",50
+3,"Master's in Computer Science, Python, Artificial Intelligence",55
+1,"Bachelor's in Mathematics, Python, Data Visualization",40
+4,"Master's in Data Science, Python, Predictive Modeling",60
+0,"Bachelor's in Computer Science, Java, Data Structures",35
+3,"Master's in Data Analytics, Python, Data Visualization",55
+1,"Bachelor's in Information Technology, Java, Python",40
+2,"Bachelor's in Data Science, R, Statistical Modeling",45
+4,"Master's in Machine Learning, Deep Learning, Python",60
+0,"Bachelor's in Computer Engineering, Python, Algorithms",35
+3,"Master's in Statistics, Python, Data Analysis",55
+1,"Bachelor's in Economics, Econometrics, R",40
+4,"Master's in Data Science, Python, Deep Learning",60
+2,"Bachelor's in Computer Science, Java, Web Development",45
+3,"Master's in Data Analytics, SQL, Data Visualization",55
+1,"Bachelor's in Machine Learning, Python, Neural Networks",40
+4,"Master's in Computer Science, Data Mining, Deep Learning",60
+0,"Bachelor's in Statistics, R, Statistical Modeling",35
+2,"Bachelor's in Information Technology, SQL, Python",50
+3,"Master's in Data Science, Python, Machine Learning",55
+1,"Bachelor's in Computer Science, Python, Data Analysis",40
+4,"Master's in Statistics, R, Statistical Modeling",60
+3,"Master's in Data Science, Python, Machine Learning",85
+2,"Bachelor's in Statistics, R, Data Analysis",70
+1,"Bachelor's in Computer Science, Python, SQL",55
+4,"Master's in Data Analytics, Python, Data Visualization",90
+2,"Bachelor's in Mathematics, Statistical Modeling, Python",70
+5,"Master's in Computer Science, Data Mining, Deep Learning",95
+2,"Bachelor's in Information Technology, Java, SQL",65
+3,"Master's in Data Science, Python, Natural Language Processing",80
+6,"Master's in Artificial Intelligence, Machine Learning, Python",100
+2,"Bachelor's in Computer Engineering, C++, Data Structures",65
+4,"Master's in Statistics, R, Data Analysis",90
+0,"Bachelor's in Economics, Econometrics, Python",45
+5,"Master's in Data Science, Python, Big Data Analytics",95
+2,"Bachelor's in Computer Science, Java, Database Management",70
+3,"Master's in Data Analytics, Python, Statistical Modeling",80
+7,"Master's in Machine Learning, Deep Learning, Python",100
+1,"Bachelor's in Mathematics, Python, Data Visualization",55
+4,"Master's in Data Science, Python, Predictive Modeling",90
+0,"Bachelor's in Information Technology, SQL, Web Development",45
+3,"Master's in Computer Science, Python, Artificial Intelligence",80
+5,"Master's in Statistics, R, Machine Learning",95
+1,"Bachelor's in Data Science, Python, SQL, Tableau",55
+4,"Master's in Data Analytics, Python, Data Visualization",90
+2,"Bachelor's in Computer Science, Java, Data Structures",70
+6,"Master's in Artificial Intelligence, Python, Deep Learning",100
+2,"Bachelor's in Information Technology, Java, Python",65
+3,"Master's in Data Science, R, Statistical Modeling",80
+7,"Master's in Machine Learning, Natural Language Processing",100
+1,"Bachelor's in Computer Engineering, Python, Algorithms",55
+4,"Master's in Statistics, Python, Data Analysis",90
+0,"Bachelor's in Economics, Econometrics, R",45
+5,"Master's in Data Science, Python, Deep Learning",95
+2,"Bachelor's in Computer Science, Java, Web Development",70
+3,"Master's in Data Analytics, SQL, Data Visualization",80
+2,"Bachelor's in Computer Science, Java, Web Development",40
+3,"Master's in Data Science, Python, Statistical Modeling",85
+1,"Bachelor's in Information Technology, SQL, Data Analysis",35
+4,"Master's in Computer Science, Python, Machine Learning",95
+0,"Bachelor's in Mathematics, R, Data Visualization",30
+2,"Bachelor's in Data Science, Python, Deep Learning",45
+3,"Master's in Statistics, R, Statistical Modeling",80
+1,"Bachelor's in Computer Engineering, Java, Data Structures",35
+4,"Master's in Machine Learning, Python, Neural Networks",90
+0,"Bachelor's in Economics, Econometrics, R",30
+2,"Bachelor's in Statistics, Python, Data Analysis",50
+3,"Master's in Data Analytics, SQL, Data Visualization",75
+1,"Bachelor's in Computer Science, Python, Web Development",40
+4,"Master's in Data Science, Python, Statistical Modeling",85
+0,"Bachelor's in Information Technology, SQL, Data Analysis",30
+2,"Bachelor's in Mathematics, R, Data Visualization",45
+3,"Master's in Data Science, Python, Deep Learning",80
+1,"Bachelor's in Computer Engineering, Java, Data Structures",35
+4,"Master's in Machine Learning, Python, Neural Networks",90
+0,"Bachelor's in Economics, Econometrics, R",30
+2,"Bachelor's in Statistics, Python, Data Analysis",50
+3,"Master's in Data Analytics, SQL, Data Visualization",75
+1,"Bachelor's in Computer Science, Python, Web Development",40
+4,"Master's in Data Science, Python, Statistical Modeling",85
+0,"Bachelor's in Information Technology, SQL, Data Analysis",30
+2,"Bachelor's in Mathematics, R, Data Visualization",45
+3,"Master's in Data Science, Python, Deep Learning",80
+1,"Bachelor's in Computer Engineering, Java, Data Structures",35
+4,"Master's in Machine Learning, Python, Neural Networks",90
+0,"Bachelor's in Economics, Econometrics, R",30
+2,"Bachelor's in Statistics, Python, Data Analysis",50
+3,"Master's in Data Analytics, SQL, Data Visualization",75
+1,"Bachelor's in Computer Science, Python, Web Development",40
+4,"Master's in Data Science, Python, Statistical Modeling",85
+1,"Bachelor's in Computer Science, Python, Web Development",35
+3,"Master's in Data Science, R, Machine Learning",85
+0,"Bachelor's in Information Technology, SQL, Data Analysis",30
+4,"Master's in Computer Science, Python, Statistical Modeling",90
+2,"Bachelor's in Mathematics, Data Visualization, Python",50
+1,"Bachelor's in Data Science, SQL, Data Analysis",40
+3,"Master's in Statistics, Python, Statistical Modeling",80
+0,"Bachelor's in Computer Engineering, Java, Data Structures",30
+4,"Master's in Machine Learning, Python, Neural Networks",95
+2,"Bachelor's in Economics, Econometrics, R",55
+1,"Bachelor's in Information Technology, Python, SQL",35
+3,"Master's in Data Analytics, R, Data Visualization",75
+0,"Bachelor's in Computer Science, Java, Web Development",25
+4,"Master's in Data Science, Python, Machine Learning",90
+2,"Bachelor's in Mathematics, Python, Data Analysis",50
+2,"Bachelor's in Computer Science, Java, Web Development",45
+3,"Master's in Data Science, Python, Statistical Modeling",85
+1,"Bachelor's in Information Technology, SQL, Data Analysis",35
+4,"Master's in Computer Science, Python, Machine Learning",90
+0,"Bachelor's in Mathematics, R, Data Visualization",25
+2,"Bachelor's in Data Science, Python, Deep Learning",50
+3,"Master's in Statistics, R, Statistical Modeling",80
+1,"Bachelor's in Computer Engineering, Java, Data Structures",35
+4,"Master's in Machine Learning, Python, Neural Networks",95
+0,"Bachelor's in Economics, Econometrics, R",25
+2,"Bachelor's in Statistics, Python, Data Analysis",55
+3,"Master's in Data Analytics, SQL, Data Visualization",75
+1,"Bachelor's in Computer Science, Python, Web Development",40
+4,"Master's in Data Science, Python, Statistical Modeling",85
+0,"Bachelor's in Information Technology, SQL, Data Analysis",30
+2,"Bachelor's in Mathematics, R, Data Visualization",45
+3,"Master's in Data Science, Python, Deep Learning",80
+1,"Bachelor's in Computer Engineering, Java, Data Structures",35
+4,"Master's in Machine Learning, Python, Neural Networks",90
+0,"Bachelor's in Economics, Econometrics, R",30
+2,"Bachelor's in Statistics, Python, Data Analysis",55
+3,"Master's in Data Analytics, SQL, Data Visualization",75
+1,"Bachelor's in Computer Science, Python, Web Development",40
+4,"Master's in Data Science, Python, Statistical Modeling",85
+0,"Bachelor's in Information Technology, SQL, Data Analysis",30
+2,"Bachelor's in Mathematics, R, Data Visualization",45
+3,"Master's in Data Science, Python, Deep Learning",80
+1,"Bachelor's in Computer Engineering, Java, Data Structures",35
+4,"Master's in Machine Learning, Python, Neural Networks",90
+0,"Bachelor's in Economics, Econometrics, R",30
+2,"Bachelor's in Statistics, Python, Data Analysis",55
+3,"Master's in Data Analytics, SQL, Data Visualization",75
+1,"Bachelor's in Computer Science, Python, Web Development",40
+4,"Master's in Data Science, Python, Statistical Modeling",85
+1,"Bachelor's in Computer Science, Python, Web Development",35
+2,"Master's in Data Science, R, Statistical Modeling",85
+3,"Bachelor's in Information Technology, SQL, Data Analysis",25
+4,"Master's in Computer Science, Python, Machine Learning",90
+0,"Bachelor's in Mathematics, Data Visualization, Python",55
+2,"Bachelor's in Data Science, SQL, Data Analysis",40
+4,"Master's in Statistics, Python, Statistical Modeling",80
+1,"Bachelor's in Computer Engineering, Java, Data Structures",30
+3,"Master's in Machine Learning, Python, Neural Networks",95
+0,"Bachelor's in Economics, Econometrics, R",50
+1,"Bachelor's in Information Technology, Python, SQL",35
+4,"Master's in Data Analytics, R, Data Visualization",75
+3,"Bachelor's in Computer Science, Java, Web Development",20
+2,"Master's in Data Science, Python, Statistical Modeling",85
+0,"Bachelor's in Mathematics, Python, Data Analysis",60
+1,"Bachelor's in Data Science, R, Statistical Modeling",45
+4,"Master's in Data Analytics, SQL, Data Visualization",70
+2,"Bachelor's in Computer Engineering, Python, Algorithms",25
+3,"Master's in Machine Learning, Python, Deep Learning",95
+0,"Bachelor's in Economics, Econometrics, R",50
+1,"Bachelor's in Information Technology, SQL, Python",35
+4,"Master's in Data Science, Python, Statistical Modeling",80
+2,"Bachelor's in Computer Science, Java, Data Structures",30
+3,"Master's in Data Science, Python, Machine Learning",90
+0,"Bachelor's in Mathematics, Python, Data Visualization",55
+1,"Bachelor's in Data Science, R, Statistical Modeling",40
+4,"Master's in Data Analytics, SQL, Data Visualization",75
+2,"Bachelor's in Computer Engineering, Python, Algorithms",25
+3,"Master's in Machine Learning, Python, Deep Learning",95
+0,"Bachelor's in Economics, Econometrics, R",50
+1,"Bachelor's in Information Technology, SQL, Python",35
+4,"Master's in Data Science, Python, Statistical Modeling",80
+2,"Bachelor's in Computer Science, Java, Data Structures",30
+3,"Master's in Data Science, Python, Machine Learning",90
+2,"Bachelor's in Computer Science, Python, Web Development",35
+4,"Master's in Data Science, R, Statistical Modeling",85
+1,"Bachelor's in Information Technology, SQL, Data Analysis",25
+3,"Master's in Computer Science, Python, Machine Learning",90
+0,"Bachelor's in Mathematics, Data Visualization, Python",55
+3,"Bachelor's in Data Science, SQL, Data Analysis",40
+0,"Master's in Statistics, Python, Statistical Modeling",80
+2,"Bachelor's in Computer Engineering, Java, Data Structures",30
+4,"Master's in Machine Learning, Python, Neural Networks",95
+1,"Bachelor's in Economics, Econometrics, R",50
+2,"Bachelor's in Information Technology, Python, SQL",35
+4,"Master's in Data Analytics, R, Data Visualization",75
+0,"Bachelor's in Computer Science, Java, Web Development",20
+1,"Master's in Data Science, Python, Statistical Modeling",85
+3,"Bachelor's in Mathematics, Python, Data Analysis",60
+2,"Bachelor's in Data Science, R, Statistical Modeling",45
+4,"Master's in Data Analytics, SQL, Data Visualization",70
+0,"Bachelor's in Computer Engineering, Python, Algorithms",25
+1,"Master's in Machine Learning, Python, Deep Learning",95
+3,"Bachelor's in Economics, Econometrics, R",50
+2,"Bachelor's in Information Technology, SQL, Python",35
+4,"Master's in Data Science, Python, Statistical Modeling",80
+0,"Bachelor's in Computer Science, Java, Data Structures",30
+1,"Master's in Data Science, Python, Machine Learning",90
+3,"Bachelor's in Mathematics, Python, Data Visualization",55
+2,"Bachelor's in Data Science, R, Statistical Modeling",40
+4,"Master's in Data Analytics, SQL, Data Visualization",75
+0,"Bachelor's in Computer Engineering, Python, Algorithms",25
+1,"Master's in Machine Learning, Python, Deep Learning",95
+3,"Bachelor's in Economics, Econometrics, R",50
+2,"Bachelor's in Information Technology, SQL, Python",35
+4,"Master's in Data Science, Python, Statistical Modeling",80
+0,"Bachelor's in Computer Science, Java, Data Structures",30
+1,"Master's in Data Science, Python, Machine Learning",90
+3,"Bachelor's in Computer Science, Python, Web Development",40
+8,"Master's in Data Science, R, Statistical Modeling",90
+1,"Bachelor's in Information Technology, SQL, Data Analysis",30
+6,"Master's in Computer Science, Python, Machine Learning",85
+2,"Bachelor's in Mathematics, Data Visualization, Python",50
+7,"Bachelor's in Data Science, SQL, Data Analysis",75
+4,"Master's in Statistics, Python, Statistical Modeling",80
+9,"Bachelor's in Computer Engineering, Java, Data Structures",95
+5,"Master's in Machine Learning, Python, Neural Networks",85
+10,"Bachelor's in Economics, Econometrics, R",60
+3,"Bachelor's in Information Technology, Python, SQL",35
+8,"Master's in Data Analytics, R, Data Visualization",70
+2,"Bachelor's in Computer Science, Java, Web Development",25
+7,"Master's in Data Science, Python, Statistical Modeling",80
+1,"Bachelor's in Mathematics, Python, Data Analysis",40
+6,"Bachelor's in Data Science, R, Statistical Modeling",75
+4,"Master's in Data Analytics, SQL, Data Visualization",70
+9,"Bachelor's in Computer Engineering, Python, Algorithms",90
+5,"Master's in Machine Learning, Python, Deep Learning",95
+10,"Bachelor's in Economics, Econometrics, R",60
+3,"Bachelor's in Information Technology, SQL, Python",35
+8,"Master's in Data Science, Python, Statistical Modeling",80
+2,"Bachelor's in Computer Science, Java, Data Structures",30
+7,"Master's in Data Science, Python, Machine Learning",90
+1,"Bachelor's in Mathematics, Python, Data Visualization",45
+6,"Bachelor's in Data Science, R, Statistical Modeling",75
+4,"Master's in Data Analytics, SQL, Data Visualization",70
+9,"Bachelor's in Computer Engineering, Python, Algorithms",90
+5,"Master's in Machine Learning, Python, Deep Learning",95
+10,"Bachelor's in Economics, Econometrics, R",60
+3,"Bachelor's in Information Technology, SQL, Python",35
+8,"Master's in Data Science, Python, Statistical Modeling",80
+2,"Bachelor's in Computer Science, Java, Data Structures",30
+7,"Master's in Data Science, Python, Machine Learning",90
+5,"Bachelor's in Computer Science, Python, Web Development",40
+12,"Master's in Data Science, R, Statistical Modeling",90
+3,"Bachelor's in Information Technology, SQL, Data Analysis",30
+9,"Master's in Computer Science, Python, Machine Learning",85
+2,"Bachelor's in Mathematics, Data Visualization, Python",50
+8,"Bachelor's in Data Science, SQL, Data Analysis",75
+6,"Master's in Statistics, Python, Statistical Modeling",80
+16,"Bachelor's in Computer Engineering, Java, Data Structures",95
+10,"Master's in Machine Learning, Python, Neural Networks",85
+18,"Bachelor's in Economics, Econometrics, R",60
+7,"Bachelor's in Information Technology, Python, SQL",35
+13,"Master's in Data Analytics, R, Data Visualization",70
+4,"Bachelor's in Computer Science, Java, Web Development",25
+11,"Master's in Data Science, Python, Statistical Modeling",80
+1,"Bachelor's in Mathematics, Python, Data Analysis",40
+15,"Bachelor's in Data Science, R, Statistical Modeling",75
+17,"Master's in Data Analytics, SQL, Data Visualization",70
+19,"Bachelor's in Computer Engineering, Python, Algorithms",90
+14,"Master's in Machine Learning, Python, Deep Learning",95
+20,"Bachelor's in Economics, Econometrics, R",60
+7,"Bachelor's in Information Technology, SQL, Python",35
+13,"Master's in Data Science, Python, Statistical Modeling",80
+4,"Bachelor's in Computer Science, Java, Data Structures",30
+11,"Master's in Data Science, Python, Machine Learning",90
+1,"Bachelor's in Mathematics, Python, Data Visualization",45
+15,"Bachelor's in Data Science, R, Statistical Modeling",75
+17,"Master's in Data Analytics, SQL, Data Visualization",70
+19,"Bachelor's in Computer Engineering, Python, Algorithms",90
+14,"Master's in Machine Learning, Python, Deep Learning",95
+20,"Bachelor's in Economics, Econometrics, R",60
+7,"Bachelor's in Information Technology, SQL, Python",35
+13,"Master's in Data Science, Python, Statistical Modeling",80
+4,"Bachelor's in Computer Science, Java, Data Structures",30
+11,"Master's in Data Science, Python, Machine Learning",90
+6,"Bachelor's in Computer Science, Python, Web Development",35
+18,"Master's in Data Science, R, Statistical Modeling",90
+2,"Bachelor's in Information Technology, SQL, Data Analysis",25
+9,"Master's in Computer Science, Python, Machine Learning",85
+4,"Bachelor's in Mathematics, Data Visualization, Python",45
+16,"Bachelor's in Data Science, SQL, Data Analysis",75
+7,"Master's in Statistics, Python, Statistical Modeling",80
+12,"Bachelor's in Computer Engineering, Java, Data Structures",95
+8,"Master's in Machine Learning, Python, Neural Networks",85
+20,"Bachelor's in Economics, Econometrics, R",55
+5,"Bachelor's in Information Technology, Python, SQL",30
+17,"Master's in Data Analytics, R, Data Visualization",70
+3,"Bachelor's in Computer Science, Java, Web Development",20
+15,"Master's in Data Science, Python, Statistical Modeling",80
+1,"Bachelor's in Mathematics, Python, Data Analysis",40
+10,"Bachelor's in Data Science, R, Statistical Modeling",75
+14,"Master's in Data Analytics, SQL, Data Visualization",70
+19,"Bachelor's in Computer Engineering, Python, Algorithms",90
+11,"Master's in Machine Learning, Python, Deep Learning",95
+13,"Bachelor's in Economics, Econometrics, R",50
+6,"Bachelor's in Information Technology, SQL, Python",35
+18,"Master's in Data Science, Python, Statistical Modeling",80
+2,"Bachelor's in Computer Science, Java, Data Structures",25
+9,"Master's in Data Science, Python, Machine Learning",85
+4,"Bachelor's in Mathematics, Python, Data Visualization",45
+16,"Bachelor's in Data Science, R, Statistical Modeling",75
+7,"Master's in Data Analytics, SQL, Data Visualization",70
+12,"Bachelor's in Computer Engineering, Python, Algorithms",95
+8,"Master's in Machine Learning, Python, Deep Learning",85
+20,"Bachelor's in Economics, Econometrics, R",55
+5,"Bachelor's in Information Technology, Python, SQL",30
+17,"Master's in Data Science, Python, Statistical Modeling",70
+3,"Bachelor's in Computer Science, Java, Web Development",20
+15,"Master's in Data Science, Python, Statistical Modeling",80
+9,"Bachelor's in Computer Science, Python, Web Development",40
+16,"Master's in Data Science, R, Statistical Modeling",90
+3,"Bachelor's in Information Technology, SQL, Data Analysis",30
+7,"Master's in Computer Science, Python, Machine Learning",85
+5,"Bachelor's in Mathematics, Data Visualization, Python",50
+10,"Bachelor's in Data Science, SQL, Data Analysis",75
+8,"Master's in Statistics, Python, Statistical Modeling",80
+19,"Bachelor's in Computer Engineering, Java, Data Structures",95
+11,"Master's in Machine Learning, Python, Neural Networks",85
+,,
+,,
+,,
+,,
+,,
+,,
