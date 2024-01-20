@@ -1,0 +1,14 @@
+#ignore .md files
+*.md
+#ignore ppt
+Respro presentation(final) (1) (1).pptx
+#ignore log files
+*.log
+#ignore node modules
+node_modules
+#ignore git and gitignore
+.git
+.gitignore
+#ignore the dockerignore
+.dockerignore
+
